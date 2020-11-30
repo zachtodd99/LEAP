@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="no-js" html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Incline</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../../dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="stylesheet" href="../css/location.css">
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+</head>
+
+<header>
+
+
+    <div><img id="logo_header" src="../img/logo_header.png"></div>
+    <div class="accordion__title" onclick="navigate('index')">HOME</div>
+
+    <div class="accordion__title" onclick="navigate('about')">ABOUT US</div>
+
+    <div class="accordion__title" onclick="navigate('contact')">CONTACT</div>
+
+
+    <div class="accordion__title" onclick="navigate('login')">SIGN IN</div>
+
+
+    <img
+        src="../img/search.png" onmousedown="changeSearch()" onmouseup="changeBack()" id="search_icon">
+    <input
+        type="search" id="activity_search"
+        value="  search activities"
+        onfocus="inputFocus(this)"
+        onblur="inputBlur(this)">
+
+</header>
+
+<body>
+
+<section class="container" >
+    <section class="right">
+
+        <img src="../img/google_maps_api.png" id="google_maps_api">
+        <h3>Need Gear?</h3>
+        <br>
+        <button id="buy">
+            BUY
+        </button>
+        <br>
+        <button id="rent">
+            RENT
+        </button>
+        <section id="reviews">
+            <h1>Featured Reviews</h1>
+            <section class="review">
+                <h1 class="author">John A. Doe</h1>
+                <section class="bottom_of_review">
+                    <img src="">
+                    <p>Here is my review. Please continue to read it by clicking on this review!</p>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="left" >
+
+
+        <h1>The Incline</h1>
+
+        <img src="../img/stars.png" id="rating">
+        <section id="pictures">
+            <img src="../img/incline1.png.jpg" id="center">
+            <img src="../img/incline2.png.jpg" id="first_picture">
+
+            <img src="../img/incline2.png.jpg" id="second_picture">
+
+        </section>
+        <p>
+            Length: 1 mile, but climbs 2,000 vertical feet.
+            <br>Duration: Under 30 minutes to over an hour or more depending on your fitness level and pace.
+            <br>Trail Difficulty: Difficult
+           <br> Recommended for: Physically active, not ADA accessible  
+            <br>Cost: Free
+
+
+            <br>Dogs: No dogs allowed on the Incline
+            <br>Hours of use: Dawn-Dusk, no night use permitted; 
+           <br> Beginning October 31, 2016 Hours of Operation will be:
+            <br>April 1- October 31: 6am-8pm
+            <br>November 1- March 31: 6am-6pm
+            <br>Parking:  Parking is recommended within parking lots along Manitou Avenue- Then hike up Ruxton Avenue.
+            Parking is limited and difficult to find along Ruxton. It is highly recommended to take the free shuttle
+            service during the dates of May 18 - Sept. 24. 
+
+            <br><br>Experience: The Manitou Incline gains almost 2,000 feet of elevation over less than 1 mile. It's not for
+            the faint of heart, but people from all walks (or climbs) of life have given it a go. It is, perhaps,
+            the most unique and challenging trail in the country, attracting runners, Olympic athletes and cyclists
+            from around the world. The trail is also used by military personnel and even soccer moms. More than
+            anything, the Manitou Incline is famous for dishing out a tough workout. "I can’t think of any
+            particular workout, route, or activity that forces you to push your boundaries quite like the Incline
+            does," said Cameron Chambers, national mountain bike champion. "Redlined - that is the only word I can
+            think of when describing the workout the Incline gives you."
+        </p>
+
+    </section>
+
+
+</section>
+
+<section id="slideshow">
+
+
+    <li class="carousel" id="bottom_nav">
+
+        <ul>
+            <li>
+                <div class="caption"><a>Locations</a>
+                </div>
+                <a href="skiing_locations.html">
+                    <img src="../img/skiing1.png"/></a>
+            </li>
+        </ul>
+        <ul>
+
+            <li>
+                <div class="caption"><a>Buy Equipment</a></div>
+                <a href="skiing_equipment.html">
+                    <img src="../img/skiing2.png"/></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="caption"><a>Rent Equipment</a></div>
+
+                <a href="skiing_rent.html"> <img src="../img/skiing3.png"/></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="caption"><a>Get Connected</a></div>
+
+                <a href="skiing_connect.html"> <img src="../img/skiing3.png"/></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="caption"><a>Something Else?</a></div>
+
+                <a href="skiing_connect.html"> <img src="../img/skiing3.png"/></a>
+            </li>
+        </ul>
+    </li>
+
+
+</section>
+
+</body>
+<script src="../js/plugins.js"></script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/location.js"></script>
+</html>

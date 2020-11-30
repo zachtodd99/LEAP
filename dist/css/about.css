@@ -1,0 +1,82 @@
+body{
+    /*transform: scale(0.8) translateY(1.5%);*/
+    /*transform-origin: center top;*/
+
+    /*-ms-transform: scale(0.8) translateY(1.5%); !* IE 9 *!*/
+    /*-ms-transform-origin: center top; !* IE 9 *!*/
+    /*-webkit-transform: scale(0.8) translateY(1.5%); !* Chrome, Safari, Opera *!*/
+    /*-webkit-transform-origin: center top; !* Chrome, Safari, Opera *!*/
+}
+
+.our_story_row{
+    width:100%;
+    height:auto;
+    background-color: rgba(118, 118, 118, 0.6);
+    background: -webkit-radial-gradient(#423eff 1%, rgba(118, 118, 118, 0.0) 98%,rgba(118, 118, 118, 0.0) 1%); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#423eff 1%, rgba(118, 118, 118, 0.0) 98%,rgba(118, 118, 118, 0.0) 1%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#423eff 1%, rgba(118, 118, 118, 0.0) 98%,rgba(118, 118, 118, 0.0) 1%); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#423eff 1%, rgba(118, 118, 118, 0.0) 98%,rgba(118, 118, 118, 0.0) 1%); /* Standard syntax */
+    padding: 1%;
+
+}
+
+.our_story_row p{
+    font-size: 15px;
+    color:white;
+
+    display:inline-block;
+    width:65%;
+    padding: 1%;
+
+}
+
+.our_story_row img{
+    border:3px solid #fdfdfd;
+    height: 100%;
+    display:inline-block;
+    width:28%;
+    padding: 1%;
+}
+
+.founder{
+    width:100%;
+    height:auto;
+    background-color: rgba(118, 118, 118, 0.6);
+    padding:1%;
+    display:flex;
+    align-items: center;
+    margin-top:20px;
+}
+
+.founder_image{
+    border-radius: 200px;
+    margin-top: 0;
+    width:20%;
+    height:auto;
+    display:inline-block;
+    line-height: 0;
+
+}
+
+
+
+.founder_text{
+    display:inline-block;
+    width:75%;
+    height:100%;
+    padding:1%;
+
+}
+
+.founder_name{
+    width:auto;
+    height:auto;
+    font-weight:bold;
+    text-decoration: underline;
+    font-size: 40px;
+
+}
+
+.founder_bio{
+    font-size: 20px;
+}

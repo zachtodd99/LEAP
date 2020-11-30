@@ -1,0 +1,768 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #fff; /*text color*/
+    font-size: 1em;
+    line-height: 1.4;
+    transition: background-image, 1s, ease;
+}
+#home{
+  background-image: url("../img/mountain.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body {
+    min-width: 1000px;
+    transition: all 0.4s ease .300ms;
+    /*transform: scale(0.8) translateY(10%);*/
+    /*transform-origin: center top;*/
+    /*-ms-transform: scale(0.8) translateY(10%); !* IE 9 *!*/
+    /*-ms-transform-origin: center top; !* IE 9 *!*/
+    /*-webkit-transform: scale(0.8) translateY(10%); !* Chrome, Safari, Opera *!*/
+    /*-webkit-transform-origin: center top; !* Chrome, Safari, Opera *!*/
+    margin: auto;
+    background-color:#77e494;
+
+
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+tr {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    top: 50%;
+}
+
+table {
+    column-count: 3;
+}
+
+td img {
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+.table_holder {
+    height: 500px;
+    overflow: auto
+}
+
+#holder {
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+button {
+    color: black;
+}
+
+#activity_search {
+    color: #888;
+    border-radius: 15px;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 1000px;
+    z-index:100000;
+    transform: translateY(25px);
+    transform-origin: center top;
+    -ms-transform: translateY(25px); /* IE 9 */
+    -ms-transform-origin: center top; /* IE 9 */
+    -webkit-transform: translateY(25px); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: center top; /* Chrome, Safari, Opera */
+    position:fixed;
+}
+
+/*#round_text_holder{
+    transform:  scaleX(1.5);
+    height:200px;
+    /*translateY(-375%)*/
+/*    display:none;
+    position:absolute;
+    margin-top:12%;
+
+}*/
+
+#pick_adventure {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+/*#round_text{
+    transform: scale(1.8) rotate(-69deg);
+}
+
+#round_text span{
+    position: absolute;
+    transform-origin: bottom center;
+
+}*/
+
+#circle_display {
+    position: relative;
+    height: 900px;
+    transform: translateY(-10%);
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 9%;
+
+}
+
+.circle {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: 200%;
+    transition: scale, z-index, 1s, ease;
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 1);
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.circle:hover {
+    transform: scale(1.2);
+    z-index: 500;
+
+}
+
+#circle_text {
+
+    display: none;
+    top: 50%;
+}
+
+.center_circle {
+    margin: auto;
+    transform: translateY(45%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+
+    border-radius: 150px;
+    transition: width, height, 1s, ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#center_image {
+    transform: scale(0.8);
+}
+
+#skiing {
+    background-position: 60%;
+    background-size: 80%;
+
+}
+
+.circle {
+    background-color: white;
+}
+
+#camping {
+    background-size: 160%;
+
+}
+
+#hiking {
+
+    background-size: 70%;
+}
+
+#kayaking {
+    background-size: 80%;
+}
+
+#rafting {
+    background-size: 75%;
+}
+
+#rock_climbing {
+    background-size: 80%;
+}
+
+#biking {
+    background-size: 80%;
+}
+
+p {
+    text-align: center;
+    color: black;
+
+}
+
+div p {
+    text-align: left;
+    color: white;
+}
+
+h1 {
+    margin-top: 150px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: #000 0 0 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.vert_cent {
+
+    display: flex;
+
+    align-items: center;
+    border: 5px white;
+}
+
+h1 span {
+    font: 26px Monaco, MonoSpace;
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 0;
+    text-weight: bold;
+    transform-origin: -500px center;
+    text-shadow: 2px 2px #222222;
+}
+
+/*.char1 {*/
+    /*transform: rotate(6deg);*/
+/*}*/
+
+/*.char2 {*/
+    /*transform: rotate(12deg);*/
+/*}*/
+
+/*.char3 {*/
+    /*transform: rotate(18deg);*/
+/*}*/
+
+/*.char4 {*/
+    /*transform: rotate(24deg);*/
+/*}*/
+
+/*.char5 {*/
+    /*transform: rotate(30deg);*/
+/*}*/
+
+/*.char6 {*/
+    /*transform: rotate(36deg);*/
+/*}*/
+
+/*.char7 {*/
+    /*transform: rotate(42deg);*/
+/*}*/
+
+/*.char8 {*/
+    /*transform: rotate(48deg);*/
+/*}*/
+
+/*.char9 {*/
+    /*transform: rotate(54deg);*/
+/*}*/
+
+/*.char10 {*/
+    /*transform: rotate(60deg);*/
+/*}*/
+
+/*.char11 {*/
+    /*transform: rotate(66deg);*/
+/*}*/
+
+/*.char12 {*/
+    /*transform: rotate(72deg);*/
+/*}*/
+
+/*.char13 {*/
+    /*transform: rotate(78deg);*/
+/*}*/
+
+/*.char14 {*/
+    /*transform: rotate(84deg);*/
+/*}*/
+
+/*.char15 {*/
+    /*transform: rotate(90deg);*/
+/*}*/
+
+/*.char16 {*/
+    /*transform: rotate(96deg);*/
+/*}*/
+
+/*.char17 {*/
+    /*transform: rotate(102deg);*/
+/*}*/
+
+/*.char18 {*/
+    /*transform: rotate(108deg);*/
+/*}*/
+
+/*.char19 {*/
+    /*transform: rotate(114deg);*/
+/*}*/
+
+/*.char20 {*/
+    /*transform: rotate(120deg);*/
+/*}*/
+
+/*.char21 {*/
+    /*transform: rotate(126deg);*/
+/*}*/
+
+/*.char22 {*/
+    /*transform: rotate(132deg);*/
+/*}*/
+
+/*.char23 {*/
+    /*transform: rotate(138deg);*/
+/*}*/
+
+/*.char24 {*/
+    /*transform: rotate(144deg);*/
+/*}*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+#activity_search {
+    float: right;
+    margin-top: 35px;
+    font-size: 20px;
+    position: relative;
+    width: 20%;
+    margin-right: 3%;
+}
+
+#search_icon {
+    border: none;
+    float: right;
+    margin-top: 22px;
+    position: absolute;
+    right: 2.5%;
+    z-index: 500;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+}
+
+td h2 {
+    margin-top: 5px;
+}
+
+td p {
+    text-align: center;
+}
+
+#founders {
+
+}
+
+.difficulty {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accordion {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.accordion__title {
+
+    font-family: sans-serif;
+    /*background: #999999;*/
+
+    color: #ffffff; /* tab text color*/
+    float: left;
+    line-height: 5; /*distance from top*/
+    font-weight: bold;
+    font-size: 20px;
+    height: 5%;
+    cursor: pointer;
+    min-width: 120px;
+    width: 120px !important;
+    text-align: center;
+-webkit-backface-visibility: hidden;
+}
+
+#logo_header {
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 0;
+    border: none;
+}
+
+.no-js .accordion__title {
+    float: left;
+    height: 100px;
+    cursor: auto;
+    margin-bottom: 0;
+-webkit-backface-visibility: hidden;
+}
+
+.accordion__content {
+    float: right;
+    width: 100%;
+    margin: 3em 0 0 -100%;
+    padding: 2em;
+    background: silver;
+    -webkit-backface-visibility: hidden;
+}
+
+.no-js .accordion__content {
+    float: left;
+    margin: 0;
+}
+
+.accordion__title:hover,
+.accordion__title.active {
+    background: silver;
+    color: white;
+
+}
+
+.no-js .accordion__title:hover {
+    background-color: #EEE;
+    color: #444;
+
+}
+
+@media (max-width: 48em) {
+
+    .accordion {
+        border: 1px solid grey;
+    }
+
+    .accordion__title,
+    .accordion__content {
+        float: none;
+        margin: 0;
+    }
+
+    .accordion__title:first-child {
+        border: none;
+    }
+
+    .accordion__title.active {
+        border-top-color: #eee;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .accordion__title.active, .accordion__title:hover {
+        background: #777;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .accordion__title:before {
+        content: "+";
+        text-align: center;
+        width: 2em;
+        display: inline-block;
+    }
+
+    .accordion__title.active:before {
+        content: "-";
+    }
+
+    .overflow-scrolling {
+        overflow-y: scroll;
+        height: 11em;
+        padding: 1em 1em 0 1em;
+        /* Warning: momemtum scrolling seems buggy on iOS 7  */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .accordion__content {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .no-js .accordion__content {
+        padding: 1em;
+        overflow: auto;
+        display: block;
+    }
+
+    .accordion__content:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px 0 0 10px / 50% 0 0 50%;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        content: '';
+    }
+
+}

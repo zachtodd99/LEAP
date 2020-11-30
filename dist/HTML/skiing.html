@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skiing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../../dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/locations.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="stylesheet" href="../css/slide.css">
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+</head>
+
+<header>
+
+
+    <div><img id="logo_header" src="../img/logo_header.png"></div>
+    <div class="accordion__title" onclick="navigate('index')">HOME</div>
+
+    <div class="accordion__title" onclick="navigate('about')">ABOUT US</div>
+
+    <div class="accordion__title" onclick="navigate('contact')">CONTACT</div>
+
+
+    <div class="accordion__title" onclick="navigate('login')">SIGN IN</div>
+
+
+    <img
+        src="../img/search.png" onmousedown="changeSearch()" onmouseup="changeBack()" id="search_icon">
+    <input
+        type="search" id="activity_search"
+        value="  search activities"
+        onfocus="inputFocus(this)"
+        onblur="inputBlur(this)">
+
+</header>
+
+<body>
+
+
+<div id="holder">
+
+    <h1>Skiing/Snowboarding</h1>
+
+    <!-- Introduction & Slideshow Contents -->
+
+
+    <div id="slider" class="slide">
+        <div id="left_button"><<</div>
+        <div id="right_button">>></div>
+
+        <div class="inner">
+            <div class="slideshow_item">
+                <div class="carousel">
+
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Keystone</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="keystone">
+                        </li>
+                    </ul>
+                    <ul>
+
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Breckenridge</a>
+                            </div>
+
+                            <img src="../img/skiing2.png" title="breckenridge"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Copper Mountain</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="copper mountain">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>A-Basin</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="a-basin">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Steamboat</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="steamboat">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Powderhorn</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="powderhorn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slideshow_item">
+                <div class="carousel">
+
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Keystone</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="keystone">
+                        </li>
+                    </ul>
+                    <ul>
+
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Breckenridge</a>
+                            </div>
+
+                            <img src="../img/skiing2.png" title="breckenridge"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Copper Mountain</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="copper mountain">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>A-Basin</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="a-basin">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Steamboat</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="steamboat">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Powderhorn</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="powderhorn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slideshow_item">
+                <div class="carousel">
+
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Keystone</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="keystone">
+                        </li>
+                    </ul>
+                    <ul>
+
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Breckenridge</a>
+                            </div>
+
+                            <img src="../img/skiing2.png" title="breckenridge"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Copper Mountain</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="copper mountain">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>A-Basin</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="a-basin">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Steamboat</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="steamboat">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Powderhorn</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="powderhorn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slideshow_item">
+                <div class="carousel">
+
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Keystone</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="keystone">
+                        </li>
+                    </ul>
+                    <ul>
+
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Breckenridge</a>
+                            </div>
+
+                            <img src="../img/skiing2.png" title="breckenridge"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Copper Mountain</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="copper mountain">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>A-Basin</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="a-basin">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Steamboat</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="steamboat">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Powderhorn</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="powderhorn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slideshow_item">
+                <div class="carousel">
+
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Keystone</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="keystone">
+                        </li>
+                    </ul>
+                    <ul>
+
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Breckenridge</a>
+                            </div>
+
+                            <img src="../img/skiing2.png" title="breckenridge"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Copper Mountain</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="copper mountain">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>A-Basin</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="a-basin">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Steamboat</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="steamboat">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="locs">
+                            <div class="caption">
+                                <a>Powderhorn</a>
+                            </div>
+                            <img src="../img/skiing1.png" title="powderhorn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- this is where the featured pictures and videos will go.-->
+    <section id="featured">
+        <div id="video"></div>
+
+
+    </section>
+
+
+    <section id="slideshow">
+
+
+        <li class="carousel" id="bottom_nav">
+
+            <ul>
+                <li class="bottom">
+                    <div class="caption"><a>Locations</a>
+                    </div>
+
+                    <img src="../img/skiing1.png" title="Locations"/>
+                </li>
+            </ul>
+            <ul>
+
+                <li class="bottom">
+                    <div class="caption"><a>Buy Equipment</a></div>
+
+                    <img src="../img/skiing2.png" title="Buy Equipment"/>
+                </li>
+            </ul>
+            <ul>
+                <li class="bottom">
+                    <div class="caption"><a>Rent Equipment</a></div>
+
+                    <img src="../img/skiing3.png" title="Rent Equipment"/>
+                </li>
+            </ul>
+            <ul>
+                <li class="bottom">
+                    <div class="caption"><a>Get Connected</a></div>
+
+                    <img src="../img/skiing3.png" title="Get Connected"/>
+                </li>
+            </ul>
+            <ul>
+                <li class="bottom">
+                    <div class="caption"><a>Something Else?</a></div>
+
+                   <img src="../img/skiing3.png" title="Something Else?"/>
+                </li>
+            </ul>
+        </li>
+
+
+    </section>
+
+
+</div>
+
+
+</body>
+<script src="../js/plugins.js"></script>
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/slide.js"></script>
+<script src="../js/activity.js"></script>
+</html>

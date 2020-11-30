@@ -1,0 +1,118 @@
+
+#slideshow{
+
+    width: 1200px;
+    margin:auto;
+
+}
+#bottom_nav{
+    margin-top: 10px;
+    left:-170px;
+}
+
+#bottom_nav ul{
+    transform:scale(0.8);
+}
+
+
+
+
+
+.carousel {
+    width: 1000px;
+    height: 500px;
+
+    transition: all 0.4s ease .300ms;
+
+
+    margin:auto;
+    position:relative;
+    float:none;
+
+
+}
+
+#bottom_nav{
+    width:120%;
+}
+
+.carousel ul {
+    width: 100%;
+}
+
+.carousel li {
+    position: relative;
+    display: table;
+    float: left;
+    box-shadow: 0 0 30px 8px #222;
+    transition: all 0.4s ease .300ms;
+
+}
+
+
+.carousel ul li {
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -webkit-transform;
+    -ms-transition-property: -webkit-transform;
+    -o-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-duration: 0.5s;
+-webkit-backface-visibility: hidden;
+
+}
+
+.carousel ul li .caption {
+    height: 38px;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+-webkit-backface-visibility: hidden;
+
+}
+
+/*.carousel ul li:hover .caption {
+    height: 150px;
+}*/
+
+.carousel ul li:hover {
+    width: 288px;
+    -webkit-transform: scale(1.15);
+    z-index: 500;
+
+
+
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 288px;
+
+}
+
+.caption a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font: normal 24px 'Lato', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 15px;
+
+}
+
+/*this gets rid of the existing text*/
+/*.carousel ul li:hover .caption a {
+    display: none;
+*/
+
+/*.carousel ul li:hover .caption:after {
+    color:white;
+    content: 'This is where you will put the new text that you want displayed here!';
+}*/
+
+
+
