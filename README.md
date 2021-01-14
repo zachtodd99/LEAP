@@ -6,5 +6,4 @@ All development of the actual application was done by Zachary Todd.
 
 
 
-################################################
-This application was made using HTML5 Boilerplate
+###########This application was made using HTML5 Boilerplate###########
